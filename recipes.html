@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>littlesfinalproject</title>
+ <link rel="stylesheet" href="css/styles.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="recipes.html">Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main recipes">
+        <h1><span>The Warm</span>
+            <br>
+            <span class="plate">Plate</span></h1>
+        <h2>FAMILY-FRIENDLY RECIPES</h2>
+        <p>Looking to whip up something that even picky kiddos will love? Check out my recent family-friendly recipe finds below!</p>
+        <hr class="green-dividing-line">
+    
+
+        <div class="recipe-cont">
+            <section class="recipe recipe-1">
+                <h3>CLASSIC SPAGHETTI</h3>
+                <img src="img/spaghetti.png" alt="spaghetti image" class="img spaghetti">
+                <p>This classic spaghetti recipe will satisfy even the pickiest of eaters! The homemade marinara sauce combined with the juicy meatballs are sure to be a hit in any kitchen!</p>
+                <a href="https://cookingformysoul.com/the-best-chicken-quesadillas/" class="recipe-button" target="_blank">Recipe!</a>
+            </section>
+
+            <section class="recipe recipe-2">
+                <h3>SAVORY CHICKEN QUESADILLAS</h3>
+                <img src="img/quesadillas.png" alt="quesadillas image" class="img quesadillas">
+                <p>These quesadillas are a fun and delicious meal that the whole family will love! With a perfect blend of melted cheese and your choice of tasty fillings, they're quick, customizable, and sure to please even the pickiest eaters. Perfect for any night of the week!</p>
+                <a href="https://www.completelydelicious.com/spaghetti-and-meatballs/" class="recipe-button" target="_blank">Recipe!</a>
+            </section>
+            
+            <section class="recipe recipe-3">
+                <h3>GARLIC PARMESAN PASTA</h3>
+                <img src="img/basic-pasta.png" alt="garlic parmesan pasta image" class="img basic-pasta">
+                <p>For mac and cheese lovers looking for an upgrade, this garlic parmesan pasta is the perfect dish! With rich, buttery garlic sauce and a generous sprinkle of parmesan, it’s a simple yet flavorful twist on your favorite comfort food that will leave you craving more.</p>
+                <a href="https://togetherasfamily.com/creamy-garlic-pasta/" class="recipe-button" target="_blank">Recipe!</a>
+            </section>
+           
+        
+            
+        </div>
+    </div>
+
+    <footer class="footer"></footer>
+
+    <script>
+        // JavaScript for menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

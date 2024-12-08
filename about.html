@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>littlesfinalproject</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="recipes.html">Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main about">
+        <h1><span>The Warm</span>
+            <br>
+            <span class="plate">Plate</span></h1>
+        <h2>Hi, I’m Shaquira!</h2>
+        <div class ="img-intro"></div>
+          <img src="img/ingredients.png" alt="ingredients image" class="img ingredients">
+          <p> I’m a college student who discovered a passion for cooking while juggling classes, part-time jobs, and everything else that comes with student life. Cooking became more than just a necessity—it became my creative outlet and a way to unwind after a long day.
+          </p>
+          <p> Here on my website, I share easy, budget-friendly recipes that anyone can make, even with a busy schedule or limited kitchen resources. Whether it’s a quick breakfast, a one-pot dinner, or snacks to fuel late-night study sessions, I’ve got you covered.
+          </p>
+        </div>
+      
+      <hr class="green-dividing-line">
+        <div class="form">
+      <!-- Contact Form -->
+      <div class="contact-form">
+          <h2>We’d Love to Hear From You!</h2>
+          <p>Have a recipe idea, a cooking question, or just want to share your food journey? Reach out below!</p>
+          <form action="#" method="post">
+            <label for="full-name">Your Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your name" required>
+            <br>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us your idea, ask a question, or just say hi!" required></textarea>
+            <br>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+
+   
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+      
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+    </script>
+      
+</body>
+</html>
